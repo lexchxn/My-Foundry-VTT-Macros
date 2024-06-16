@@ -1,0 +1,113 @@
+{
+  "name": "Boss",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": ""
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "1",
+            "value": 1
+          },
+          {
+            "label": "2",
+            "value": 2
+          },
+          {
+            "label": "3",
+            "value": 3
+          },
+          {
+            "label": "4",
+            "value": 4
+          },
+          {
+            "label": "5",
+            "value": 5
+          },
+          {
+            "label": "6",
+            "value": 6
+          },
+          {
+            "label": "7",
+            "value": 7
+          }
+        ],
+        "flag": "bossBonus",
+        "key": "ChoiceSet",
+        "prompt": "Boost the boss' statistics by this value."
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "attack-roll",
+          "ac",
+          "perception",
+          "skill-check",
+          "spell-dc",
+          "saving-throw",
+          "inline-dc"
+        ],
+        "value": "{item|flags.pf2e.rulesSelections.bossBonus}"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.926,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": false
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "TabletopBadges_49.PNG",
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "abomination-vaults",
+      "system": "pf2e",
+      "coreVersion": "11.315",
+      "systemVersion": "5.16.0"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.16.0",
+    "coreVersion": "11.315",
+    "createdTime": 1718138870715,
+    "modifiedTime": 1718234286047,
+    "lastModifiedBy": "iZiJWIk74567pQaG"
+  }
+}

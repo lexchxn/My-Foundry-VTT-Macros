@@ -1,0 +1,78 @@
+{
+  "name": "Proficiency Without Level",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": ""
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "attack-roll",
+          "ac",
+          "perception",
+          "skill-check",
+          "spell-dc",
+          "saving-throw",
+          "inline-dc"
+        ],
+        "value": "0 - @actor.level"
+      }
+    ],
+    "slug": "proficiency-without-level",
+    "_migration": {
+      "version": 0.926,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": false
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "006.png",
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "abomination-vaults",
+      "system": "pf2e",
+      "coreVersion": "11.315",
+      "systemVersion": "5.16.0"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.16.0",
+    "coreVersion": "11.315",
+    "createdTime": 1716581632198,
+    "modifiedTime": 1716583184862,
+    "lastModifiedBy": "iZiJWIk74567pQaG"
+  }
+}
