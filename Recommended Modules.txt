@@ -1,0 +1,41 @@
+My recommended must-have modules have a leading asterisk, but I highly recommend every single one of these.
+
+*Carousel Combat Tracker
+*Combat Enhancements
+Dice So Nice!
+Dice Stats
+Dice Tray
+*Drag Ruler
+*Health Estimate
+lib - Color Settings
+libWrapper
+Mana's Compendium Importer
+PF2e Companion Compendia
+PF2e Dailies
+*PF2e Dorako UI
+PF2e Doraku UX
+*PF2e Drag Ruler Integration
+PF2e Exploit Vulnerability
+PF2e Exploration Effects
+*pf2e Extempore Effects
+PF2e Flat Check
+PF2e Keybind Menagerie
+PF2E Modifiers Matter
+*PF2e Toolbelt
+*PF2e Workbench
+Popout Resizer
+PopOut!
+*Quick Insert - Search Widget
+Rideable
+Roll Tracker
+routinglib
+socketlib
+Tactical Grid
+The Forge
+The Forge: More Awesomeness
+*Token Action HUD Core
+*Token Action HUD Pathfinder 2e
+Token Mold
+*Token Z
+Tokenizer
+Torch
