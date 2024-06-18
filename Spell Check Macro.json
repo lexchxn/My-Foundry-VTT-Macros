@@ -1,0 +1,65 @@
+{
+  "name": "Spell Check",
+  "type": "action",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>@Check[type:spell-attack|defense:fortitude]{Fortitude Spell Check}</p>\n<p>@Check[type:spell-attack|defense:reflex]{Reflex Spell Check}</p>\n<p>@Check[type:spell-attack|defense:will]{Will Spell Check}<br /><br /></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Making a Spell Check",
+        "selector": "spell-attack",
+        "value": -1,
+        "predicate": [
+          "spellshape"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.926,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "spellshape"
+      ]
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": null,
+    "actions": {
+      "value": null
+    },
+    "deathNote": false
+  },
+  "img": "systems/pf2e/icons/actions/FreeAction.webp",
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "outlaws-of-alkenstar",
+      "system": "pf2e",
+      "coreVersion": "11.315",
+      "systemVersion": "5.16.0"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.16.0",
+    "coreVersion": "11.315",
+    "createdTime": 1718671727575,
+    "modifiedTime": 1718674343631,
+    "lastModifiedBy": "bsZxhaOe9Bcta8I0"
+  }
+}
