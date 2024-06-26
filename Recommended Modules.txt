@@ -5,7 +5,6 @@ My recommended must-have modules have a leading asterisk, but I highly recommend
 Dice So Nice!
 Dice Stats
 Dice Tray
-*Drag Ruler
 *Health Estimate
 lib - Color Settings
 libWrapper
@@ -14,13 +13,13 @@ PF2e Companion Compendia
 PF2e Dailies
 *PF2e Dorako UI
 PF2e Doraku UX
-*PF2e Drag Ruler Integration
 PF2e Exploit Vulnerability
 PF2e Exploration Effects
 *pf2e Extempore Effects
 PF2e Flat Check
 PF2e Keybind Menagerie
 PF2E Modifiers Matter
+*PF2e Token Drag Ruler
 *PF2e Toolbelt
 *PF2e Workbench
 Popout Resizer
