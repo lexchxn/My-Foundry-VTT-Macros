@@ -12,7 +12,7 @@
         "key": "FlatModifier",
         "label": "Making a Spell Check",
         "selector": "spell-attack",
-        "value": -1,
+        "value": -2,
         "predicate": [
           "spellshape"
         ]
