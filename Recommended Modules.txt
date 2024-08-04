@@ -19,6 +19,7 @@ PF2e Exploration Effects
 PF2e Flat Check
 PF2e Keybind Menagerie
 PF2E Modifiers Matter
+PF2e Staves
 *PF2e Token Drag Ruler
 *PF2e Toolbelt
 *PF2e Workbench
