@@ -6,7 +6,6 @@ Dice So Nice!
 *Dice Tray
 *Elevation Ruler
 *Health Estimate
-lib - Color Settings
 libWrapper
 Mana's Compendium Importer
 PF2e Companion Compendia
