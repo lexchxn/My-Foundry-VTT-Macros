@@ -1,12 +1,18 @@
 My recommended must-have modules have a leading asterisk, but I highly recommend every single one of these.
 
 *Carousel Combat Tracker
+Chat Images
 *Combat Enhancements
+Combat Focus
+*Cursor Hider
 Dice So Nice!
 *Dice Tray
+Enhanced Terrain Layer
 *Health Estimate
+Image Hover
 libWrapper
 Mana's Compendium Importer
+*Ownership Viewer
 PF2e Companion Compendia
 PF2e Dailies
 PF2e Exploit Vulnerability
@@ -22,6 +28,7 @@ PF2e Staves
 *PF2e Workbench
 *Quick Insert - Search Widget
 Roll Tracker
+Settings Extender
 socketlib
 Sync Token Names
 Tactical Grid
@@ -31,4 +38,5 @@ The Forge: More Awesomeness
 *Token Action HUD Pathfinder 2e
 *Token Z
 *Tokenizer
+Window Controls
 Z Scatter
