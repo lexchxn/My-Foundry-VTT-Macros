@@ -1,0 +1,1219 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "flags": {
+      "aedifs-tactical-grid": {
+        "viewDistance": null,
+        "viewShape": "",
+        "color": ""
+      },
+      "Rideable": {
+        "issetRideableFlag": true,
+        "MaxRiderFlag": null,
+        "CustomRidingheightFlag": null,
+        "UseRidingHeightFlag": true,
+        "RidersScaleFlag": 1,
+        "RiderPositioningFlag": "RowPlacement",
+        "RiderOffsetFlag": [
+          0,
+          0
+        ],
+        "TokenFormFlag": "TokenFormCircle",
+        "InsideMovementFlag": false,
+        "SpawnRidersFlag": "",
+        "MountingEffectsFlag": "",
+        "WorldMEffectOverrideFlag": false,
+        "SelfApplyEffectsFlag": false,
+        "forMountEffectsFlag": "",
+        "canbeGrappledFlag": true,
+        "CanbePilotedFlag": false,
+        "PilotedbyDefaultFlag": false,
+        "CheckPilotedCollisionFlag": false
+      },
+      "healthEstimate": {
+        "dontMarkDead": false,
+        "hideHealthEstimate": false,
+        "hideName": false
+      },
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": false
+      },
+      "token-z": {
+        "zIndex": 0
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "name": "Burrower",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "tokenizer/npc-images/burrower.Token.webp?1724926365996",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1.35,
+      "scaleY": 1.35,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "randomImg": false
+  },
+  "name": "Burrower",
+  "type": "npc",
+  "effects": [],
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 180,
+        "temp": 0,
+        "max": 180,
+        "details": ""
+      },
+      "speed": {
+        "value": 35,
+        "otherSpeeds": [
+          {
+            "type": "burrow",
+            "value": 25
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 25,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "resistances": [
+        {
+          "type": "slashing",
+          "value": 5,
+          "exceptions": [],
+          "doubleVs": []
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "bludgeoning",
+          "value": 2,
+          "exceptions": []
+        },
+        {
+          "type": "piercing",
+          "value": 2,
+          "exceptions": []
+        },
+        {
+          "type": "cold",
+          "value": 5,
+          "exceptions": []
+        }
+      ],
+      "immunities": [
+        {
+          "type": "acid",
+          "exceptions": []
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 8
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.932,
+      "previous": null
+    },
+    "abilities": {
+      "str": {
+        "mod": 6
+      },
+      "dex": {
+        "mod": 4
+      },
+      "con": {
+        "mod": 4
+      },
+      "int": {
+        "mod": 0
+      },
+      "wis": {
+        "mod": -5
+      },
+      "cha": {
+        "mod": -5
+      }
+    },
+    "perception": {
+      "details": "Tremorsense (Precise, 60 feet), Darkvision",
+      "mod": 18,
+      "senses": [],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 14,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 18,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 11,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 18
+      },
+      "deception": {
+        "base": 16,
+        "special": []
+      },
+      "intimidation": {
+        "base": 15,
+        "special": []
+      },
+      "stealth": {
+        "base": 16,
+        "special": []
+      }
+    },
+    "traits": {
+      "value": [
+        "beast"
+      ],
+      "rarity": "uncommon",
+      "size": {
+        "value": "lg"
+      }
+    }
+  },
+  "img": "tokenizer/npc-images/burrower.Avatar.webp?1724926365996",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "All-Around Vision",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "system.attributes.flanking.flankable",
+            "value": false
+          }
+        ],
+        "slug": "all-around-vision",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w",
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922333611,
+        "modifiedTime": 1724922333611,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "_id": "O1x1J2aH6nMPg5Ry"
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "trip"
+          ]
+        },
+        "damageRolls": {
+          "Zr3VxklXF7p91oTS": {
+            "damage": "2d6+6",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 18
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "2gWu1xiHJ8Naj9e2",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922365680,
+        "modifiedTime": 1724925607968,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "melee",
+      "name": "Bite",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "deadly-2d10"
+          ]
+        },
+        "damageRolls": {
+          "kCGlTE1hCT0isIci": {
+            "damage": "2d10+4",
+            "damageType": "piercing",
+            "category": null
+          },
+          "nicOY2xTbk62cv65": {
+            "damage": "2d6",
+            "damageType": "acid",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 18
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "RrY5ACPxclKqbquo",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922367229,
+        "modifiedTime": 1724925755350,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "melee",
+      "name": "Acid Glob",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "acid",
+            "range-increment-20",
+            "splash"
+          ]
+        },
+        "damageRolls": {
+          "s3nPFcIoLGs5MBJL": {
+            "damage": "2d8+4",
+            "damageType": "acid",
+            "category": null
+          },
+          "n0sDsakAE4TmoHNC": {
+            "damage": "4",
+            "damageType": "acid",
+            "category": "splash"
+          }
+        },
+        "bonus": {
+          "value": 16
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "j1JMhiYA9DPCWR1D",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922370049,
+        "modifiedTime": 1724926586470,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Acid Glob",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature uses a move action or moves between squares within the Burrower's first range increment.</p><hr /><p>The Burrower spits a glob of quickly formulated acid to stop the enemy in its tracks. Make an Acid Glob attack against the triggering creature. On a hit, the creature takes @Damage[4[persistent,acid]] damage and suffers a @UUID[Item.jklgVOhLFPUbx1A0]{-15 foot circumstance penalty to Speed} as long as the damage persists, rather than the Strike's normal effects.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "K2VI0DyFUniefnmj",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922505486,
+        "modifiedTime": 1724926141364,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Acidic Blood",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature deals physical damage to the Burrower for the first time and is within 10 feet.</p><hr /><p>Acid sprays out of the wound and catches the foe off-guard! The triggering creature takes @Damage[4d6[acid]] with a basic @Check[reflex|dc:24], then learns how to move so that the acid will spray away from them.</p><p>If a creature identifies the Burrower with Recall Knowledge or knows about this ability, they can spend an action pointing out this feature to all creatures that can hear them, allowing those creatures to treat their degree of success as one higher on their saving throws.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "Pa4hasYw3w1WlqvS",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922508417,
+        "modifiedTime": 1724926141364,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Death Throes",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> The Burrower is reduced to 0 Hit Points.</p><hr /><p>Flailing about with an injured carapace, the Burrower's acidic blood goes everywhere. All creatures in a 20-foot emanation take @Damage[10d6[acid]] with a basic @Check[reflex|dc:24].</p><hr /><p><strong>Special</strong> Creatures that have successfully Recalled Knowledge about the Burrower, as well as anyone else they have spent an action pointing this out to, treat their degree of success as one better.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "fEW1jOTPktwi6vgs",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724922508914,
+        "modifiedTime": 1724926217160,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Sweep- Chomp!",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Burrower sweeps with its large claws, then bites a foe it knocked prone. Make up to three Claw attacks against different creatures, each with a -2 penalty.</p><p>After the Claw attacks, the Burrower may make a Bite attack against a single creature knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} by this ability. The Strikes made as part of Sweep- Chomp! do not suffer from the multiple attack penalty, but increment it as normal.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": null,
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "W7WeU3t3zN9ZG1AP",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724923554578,
+        "modifiedTime": 1724926141364,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Hooked Claws",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Its claws hook downwards, concealing their true range. The Burrower Strikes three times with its Claw attack, increasing its reach to 10 feet for those attacks.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": null,
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "jqF4aYn8afwluURD",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724923555851,
+        "modifiedTime": 1724926141364,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Into the Earth",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Frequency</strong> once per encounter; you haven't used Pull Underground or Acid Ejection this round<br /><strong>Trigger</strong> An enemy's turn ends.</p><hr /><p>The Burrower dives down below, engaging on its own terms. The Burrower @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrows} four times, leaving an opening behind and creating an arena that favours it.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "uNxhLXmGaZwt6YYI",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724924011098,
+        "modifiedTime": 1724926491289,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Pull Underground",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Frequency </strong>see special; you haven't used Into the Earth or Acid Ejection this round<strong><br />Trigger</strong> An enemy's turn ends.</p><hr /><p>The Burrower knows what prey it wants, and will do what it can to get them. The Burrower @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrows} three times, leaving an opening behind it, then @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapples} an enemy in a square above the Burrower, through solid terrain, and within its reach. If the grapple is successful, the creature is pulled through the ground into the nearest open adjacent space, leaving no opening.</p><hr /><p><strong>Special</strong> If the grapple succeeds, the Burrower cannot use this ability again this encounter. Otherwise, the Burrower can use this ability again on subsequent rounds.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "CimRC7pbZMEQTL21",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724924013116,
+        "modifiedTime": 1724926665045,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Acid Ejection",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Frequency</strong> once per encounter; you haven't used Into the Earth or Pull Underground this round<br /><strong>Requirements</strong> The Burrower has taken physical damage.<br /><strong>Trigger</strong> An enemy's turn ends.</p><hr /><p>The Burrower shudders violently and acid flies off its carapace. All creatures within a 30 foot emanation take @Damage[8d6[acid]] with a basic @Check[reflex|dc:24].</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.330",
+            "system": "6.2.3"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "8aqZ1bry4KYXhP1t",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724924013606,
+        "modifiedTime": 1724926524746,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Darkvision",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+        },
+        "rules": [],
+        "slug": "darkvision",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724924193683,
+        "modifiedTime": 1724924193683,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "_id": "qzMWsyt7EaOOtW8G"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Tremorsense (Precise, 60 feet)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+        },
+        "rules": [],
+        "slug": "tremorsense",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW",
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724924758437,
+        "modifiedTime": 1724924775212,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "_id": "dn5K7IpUBPvurS1t"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Improved Knockdown (claw)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
+        },
+        "rules": [],
+        "slug": "improved-knockdown",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.LbnsT8yXchHMQT3t",
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.3",
+        "createdTime": 1724926139254,
+        "modifiedTime": 1724926148908,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.LbnsT8yXchHMQT3t"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "_id": "ZPtBawbZRb4vSNSv"
+    }
+  ],
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "aelops-tavern",
+      "system": "pf2e",
+      "coreVersion": "12.331",
+      "systemVersion": "6.3.0"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.330",
+    "systemId": "pf2e",
+    "systemVersion": "6.3.0",
+    "createdTime": 1724922279977,
+    "modifiedTime": 1724928177311,
+    "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+  }
+}
