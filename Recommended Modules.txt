@@ -7,7 +7,6 @@ Combat Focus
 *Cursor Hider
 Dice So Nice!
 *Dice Tray
-Enhanced Terrain Layer
 *Health Estimate
 Image Hover
 libWrapper
