@@ -17,9 +17,9 @@ PF2e Dailies
 PF2e Exploit Vulnerability
 PF2E Exploration Effects
 *pf2E Extempore Effects
-*PF2e Flat Check
 PF2e Keybind Menagerie
 Pf2E Modifiers Matter
+*Pf2e Perception
 PF2e Specific Familiars
 PF2e Staves
 *PF2e Token Drag Ruler
