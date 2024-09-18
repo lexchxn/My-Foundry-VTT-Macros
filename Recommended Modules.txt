@@ -32,6 +32,7 @@ Settings Extender
 socketlib
 Sync Token Names
 Tactical Grid
+Terrain Mapper
 The Forge
 The Forge: More Awesomeness
 *Token Action HUD Core
