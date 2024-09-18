@@ -25,6 +25,7 @@ PF2e Staves
 *PF2e Token Drag Ruler
 *PF2e Toolbelt
 *PF2e Workbench
+Polyglot
 *Quick Insert - Search Widget
 Roll Tracker
 Settings Extender
