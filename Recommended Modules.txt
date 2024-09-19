@@ -8,6 +8,7 @@ Combat Focus
 Dice So Nice!
 *Dice Tray
 *Health Estimate
+Illandril's Turn Marker
 Image Hover
 libWrapper
 Mana's Compendium Importer
@@ -32,6 +33,7 @@ Settings Extender
 socketlib
 Sync Token Names
 Tactical Grid
+Terrain Mapper
 Terrain Mapper
 The Forge
 The Forge: More Awesomeness
