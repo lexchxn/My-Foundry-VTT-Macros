@@ -1,0 +1,1823 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "flags": {
+      "aedifs-tactical-grid": {
+        "viewDistance": null,
+        "viewShape": "",
+        "color": ""
+      },
+      "Rideable": {
+        "issetRideableFlag": true,
+        "MaxRiderFlag": null,
+        "CustomRidingheightFlag": null,
+        "UseRidingHeightFlag": true,
+        "RidersScaleFlag": 1,
+        "RiderPositioningFlag": "RowPlacement",
+        "RiderOffsetFlag": [
+          0,
+          0
+        ],
+        "TokenFormFlag": "TokenFormCircle",
+        "InsideMovementFlag": false,
+        "SpawnRidersFlag": "",
+        "MountingEffectsFlag": "",
+        "WorldMEffectOverrideFlag": false,
+        "SelfApplyEffectsFlag": false,
+        "forMountEffectsFlag": "",
+        "canbeGrappledFlag": true,
+        "CanbePilotedFlag": false,
+        "PilotedbyDefaultFlag": false,
+        "CheckPilotedCollisionFlag": false
+      },
+      "healthEstimate": {
+        "dontMarkDead": false,
+        "hideHealthEstimate": false,
+        "hideName": false
+      },
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": false
+      },
+      "token-z": {
+        "zIndex": 0
+      },
+      "image-hover": {
+        "hideArt": false,
+        "specificArt": "path/image.png"
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "name": "Beholder",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "tokenizer/npc-images/beholder.Token.webp?1726689906137",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1.2,
+      "scaleY": 1.2,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "randomImg": false
+  },
+  "name": "Beholder",
+  "type": "npc",
+  "effects": [],
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 300,
+        "temp": 0,
+        "max": 300,
+        "details": ""
+      },
+      "speed": {
+        "value": 0,
+        "otherSpeeds": [
+          {
+            "type": "fly",
+            "value": 30
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 31,
+        "details": ""
+      },
+      "allSaves": {
+        "value": "+1 vs. Magic"
+      }
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "aklo",
+          "sakvroth"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 13
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.932,
+      "previous": null
+    },
+    "abilities": {
+      "str": {
+        "mod": 5
+      },
+      "dex": {
+        "mod": 3
+      },
+      "con": {
+        "mod": 5
+      },
+      "int": {
+        "mod": 8
+      },
+      "wis": {
+        "mod": 4
+      },
+      "cha": {
+        "mod": 3
+      }
+    },
+    "perception": {
+      "details": "all-around vision, darkvision",
+      "mod": 25,
+      "senses": [],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 22,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 20,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 27,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "base": 27,
+        "special": []
+      },
+      "athletics": {
+        "base": 26,
+        "note": "Telekinetic Ray only",
+        "special": []
+      }
+    },
+    "traits": {
+      "value": [
+        "aberration"
+      ],
+      "rarity": "rare",
+      "size": {
+        "value": "lg"
+      }
+    }
+  },
+  "img": "tokenizer/npc-images/beholder.Avatar.webp?1726689906137",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "All-Around Vision",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "system.attributes.flanking.flankable",
+            "value": false
+          }
+        ],
+        "slug": "all-around-vision",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673469259,
+        "modifiedTime": 1726673469259,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "Qslp39n0PBLw6eGB"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Darkvision",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+        },
+        "rules": [],
+        "slug": "darkvision",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673489688,
+        "modifiedTime": 1726673489688,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "qTS2GBnDxiubSN2C"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "+1 Status to All Saves vs. Magic",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "item:magical"
+            ],
+            "selector": "saving-throw",
+            "type": "status",
+            "value": 1
+          }
+        ],
+        "slug": "1-status-to-all-saves-vs-magic",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673653084,
+        "modifiedTime": 1726673653084,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "VAOgUFM8d883pnja"
+    },
+    {
+      "type": "action",
+      "name": "Hover",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Beholder automatically sustains its flight, even if it's unconscious, and can't be brought down from the air by nonmagical means.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.3.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "QWlSVUnw4Lbs6r9B",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673765023,
+        "modifiedTime": 1726673895670,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "melee",
+      "name": "Bite",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile"
+          ]
+        },
+        "damageRolls": {
+          "fYLj4yLcFv6OPdNd": {
+            "damage": "3d8+10",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 24
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "gyUXcwYylUqJwEib",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673967447,
+        "modifiedTime": 1726674098399,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "melee",
+      "name": "Malformed Eye Beam",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "death",
+            "range-120"
+          ]
+        },
+        "damageRolls": {
+          "6EdSwfJ0anDHyVnm": {
+            "damage": "3d10+14",
+            "damageType": "force",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 26
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "iFKPK9XUTc88xR3Y",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726673967793,
+        "modifiedTime": 1726674075123,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Eye Ray",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature's turn ends.</p><hr /><p>Make a @Check[flat|showDC:all|dc:6] flat check. On a success, the Beholder's eye rays fire off at a random foe it can see within 120 feet. If a referenced effect would have a duration, it can be no longer than 2 rounds. All effect ranks are equal to half the Beholder's level (rounded up), despite the Heightened rank being different. Roll a d10:</p><ol><li><p><strong>Charm Ray </strong>- The Beholder is affected as per @UUID[Compendium.pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{Sanctuary}, except only against the target and the spell doesn't end if the Beholder takes a hostile action against creatures other than you. (@Check[will|dc:34|basic])</p></li><li><p><strong>Paralysing Ray </strong>- Affected as per @UUID[Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW]{Paralyze}. (@Check[will|dc:34|basic])</p></li><li><p><strong>Fear Ray</strong> - Affected as per @UUID[Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}. (@Check[will|dc:34|basic])</p></li><li><p><strong>Slowing Ray </strong>- Affected as per @UUID[Compendium.pf2e.spells-srd.WsUwpfmhKrKwoIe3]{Slow}. (@Check[fortitude|dc:34|basic])</p></li><li><p><strong>Enervation Ray</strong> - Affected as per 7th-rank @UUID[Compendium.pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{Vampiric Feast}, except the Beholder gains no temporary Hit Points. (@Check[fortitude|dc:34|basic])</p></li><li><p><strong>Telekinetic Ray</strong> - The Beholder @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilises} and attempts to @UUID[Compendium.pf2e.actionspf2e.lOE4yjUnETTdaf2T]{Reposition} the target; this does not use or increment the multiple attack penalty, it cannot critically fail, and it can reposition anywhere within 120 feet of it, including into the air. The @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC is the Beholder's Eye Ray DC.</p></li><li><p><strong>Sleep Ray</strong> - Affected as per 1st-rank @UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep}, except the creature can't attempt Perception checks to wake up. (@Check[will|dc:34|basic])</p></li><li><p><strong>Petrification Ray</strong> - Affected as per @UUID[Compendium.pf2e.spells-srd.znv4ECL7ZtuiagtA]{Petrify}. (@Check[fortitude|dc:34|basic])</p></li><li><p><strong>Disintegration Ray</strong> - Affected as per @UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{Disintegrate}. (@Check[fortitude|dc:34|basic])</p></li><li><p><strong>Death Ray</strong> - The target takes 25 damage with a basic Fortitude save; on a failed save, the target increases their @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed} condition by 1. (@Check[fortitude|dc:34|basic])</p></li></ol>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.3.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "k1glrJSKKDRjnzVO",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726674187374,
+        "modifiedTime": 1726676875196,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "name": "Arcane Innate Spells",
+      "type": "spellcastingEntry",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ability": {
+          "value": "int"
+        },
+        "spelldc": {
+          "value": 26,
+          "dc": 34
+        },
+        "tradition": {
+          "value": "arcane"
+        },
+        "prepared": {
+          "value": "innate"
+        },
+        "showSlotlessLevels": {
+          "value": false
+        },
+        "proficiency": {
+          "value": 1
+        },
+        "slots": {
+          "slot0": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot1": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot2": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot3": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot4": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot5": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot6": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot7": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot8": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot9": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot10": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot11": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          }
+        },
+        "autoHeightenLevel": {
+          "value": 7
+        }
+      },
+      "_id": "rVAv7f7rH9hUj8bv",
+      "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675210213,
+        "modifiedTime": 1726676888256,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "img": "systems/pf2e/icons/spells/sanctuary.webp",
+      "name": "Sanctuary",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Beholder is warded with protective energy that deters attacks. If you attempt to attack the Beholder you must attempt a Will save each time. If the Beholder uses a hostile action against you, the spell ends.</p><hr /><p><strong>Critical Success</strong> <em>Sanctuary</em> ends.</p><p><strong>Success</strong> You can attempt your attack and any other attacks against the Beholder this turn.</p><p><strong>Failure</strong> You can't attack the target and waste the action. You can't attempt further attacks against the Beholder this turn.</p><p><strong>Critical Failure</strong> You waste the action and can't attempt to attack the Beholder for the rest of <em>sanctuary</em>'s duration.</p>"
+        },
+        "rules": [],
+        "slug": "sanctuary",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "occult"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "touch"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "2 rounds",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": null,
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675248677,
+        "modifiedTime": 1726675461083,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "9Jho0t4oIVdewPJ8"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/paralyze.webp",
+      "name": "Paralyze",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You block the target's motor impulses before they can leave its mind, threatening to freeze the target in place. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p><p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p><p><strong>Critical Failure</strong> The target is Paralyzed for 2 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p><hr /><p><strong>Heightened (7th)</strong> You can target up to 10 creatures.</p>"
+        },
+        "rules": [],
+        "slug": "paralyze",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 3
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "varies",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "will"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "levels": {
+            "7": {
+              "target": {
+                "value": "10 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675253140,
+        "modifiedTime": 1726675492366,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "J1WkrGzZ3SfKueiJ"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/fear.webp",
+      "name": "Fear",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>"
+        },
+        "rules": [],
+        "slug": "fear",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "varies",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "will"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "levels": {
+            "3": {
+              "target": {
+                "value": "5 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675259549,
+        "modifiedTime": 1726675336672,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "XkGzLO4fpXooaVgB"
+    },
+    {
+      "img": "icons/magic/time/hourglass-tilted-gray.webp",
+      "name": "Slow",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You dilate the flow of time around the target, slowing its actions.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p><p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 2 rounds.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 2 rounds.</p><hr /><p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>"
+        },
+        "rules": [],
+        "slug": "slow",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 3
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "2 rounds",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "fortitude"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "levels": {
+            "6": {
+              "target": {
+                "value": "10 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675262851,
+        "modifiedTime": 1726675519625,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "TOu86j2wQG4mdGp5"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/vampiric-touch.webp",
+      "name": "Vampiric Feast",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+        },
+        "rules": [],
+        "slug": "vampiric-feast",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 3
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 living creature"
+        },
+        "range": {
+          "value": "touch"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "",
+          "sustained": false
+        },
+        "damage": {
+          "0": {
+            "applyMod": false,
+            "category": null,
+            "formula": "6d6",
+            "kinds": [
+              "damage"
+            ],
+            "materials": [],
+            "type": "void"
+          }
+        },
+        "defense": {
+          "save": {
+            "basic": true,
+            "statistic": "fortitude"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "damage": {
+            "0": "2d6"
+          },
+          "interval": 1,
+          "type": "interval"
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675267129,
+        "modifiedTime": 1726675336026,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "YEn1wCXyvEeQqtFI"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/sleep.webp",
+      "name": "Sleep",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Each creature in the area becomes drowsy and might fall asleep. A creature that falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} from this spell doesn't fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} or release what it's holding. You can't attempt Perception checks to wake up.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes a -1 status penalty to Perception checks for 1 round.</p><p><strong>Failure</strong> The creature falls Unconscious. If it's still Unconscious after 1 minute, it wakes up automatically.</p><p><strong>Critical Failure</strong> The creature falls Unconscious. If it's still Unconscious after 1 hour, it wakes up automatically.</p>"
+        },
+        "rules": [],
+        "slug": "sleep",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental",
+            "sleep"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": {
+          "type": "burst",
+          "value": 5
+        },
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "2 rounds",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "will"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675273773,
+        "modifiedTime": 1726675570874,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "7Qssjt7mBOIMHpER"
+    },
+    {
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "name": "Petrify",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The target's body slowly turns into a stone statue. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as stone begins to form on their body.</p>\n<p><strong>Failure</strong> The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure) as stone growths creep across their body. A successful save reduces the slowed condition by 1. When a creature becomes fully unable to act due to the slowed condition from <em>petrify</em>, the spell then ends in a flash of gray light, leaving the target @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently as they become a statue. The spell also ends if the slowed condition is removed, which causes the stone to break off harmlessly.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+        },
+        "rules": [],
+        "slug": "petrify",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 6
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature made of organic material"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "2 rounds",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "fortitude"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 7,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675278104,
+        "modifiedTime": 1726675591230,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "e10r6Aj6JtDPabvd"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/disintegrate.webp",
+      "name": "Disintegrate",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A black tracer bolt flies toward your target, and upon making contact intensifies into a powerful destructive beam. Make a spell attack against the target. If you hit an object or force construct (such as a wall of force), it's destroyed with no save unless it's an artifact or similarly powerful. A single casting can destroy no more than a 10-foot cube of matter. If you hit a creature, it takes 12d10 damage (no damage type) with a basic Fortitude save. If you critically hit, the target gets a result one degree of success worse than the outcome of its Fortitude save. A creature reduced to 0 HP is blasted to fine powder; its gear remains.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d10.</p>"
+        },
+        "rules": [],
+        "slug": "disintegrate",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 6
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature, unattended object, or force construct"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "",
+          "sustained": false
+        },
+        "damage": {
+          "0": {
+            "applyMod": false,
+            "category": null,
+            "formula": "12d10",
+            "kinds": [
+              "damage"
+            ],
+            "materials": [],
+            "type": "untyped"
+          }
+        },
+        "defense": {
+          "save": {
+            "basic": true,
+            "statistic": "fortitude"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "rVAv7f7rH9hUj8bv",
+          "heightenedLevel": 6,
+          "uses": {
+            "max": 99,
+            "value": 99
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "damage": {
+            "0": "2d10"
+          },
+          "interval": 1,
+          "type": "interval"
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675282389,
+        "modifiedTime": 1726676880688,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_id": "w0UM5OHNakpSdOO1"
+    },
+    {
+      "type": "action",
+      "name": "Antimagic Gaze",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Beholder focuses the power of its central eye on a creature it can see within 120 feet. For as long as the Beholder can see that creature, all magical effects and items are suppressed (including runes); any time the creature attempts to use a magical ability or Cast a Spell, the Beholder automatically attempts to counteract it.</p><p>The gaze automatically ends if the creature is no longer visible to the Beholder at the end of its turn.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.3.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": null,
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "jr42tmWh61QJcWKS",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675764679,
+        "modifiedTime": 1726676771734,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Switch Gaze",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> The Beholder's Antimagic Gaze would end.</p><hr /><p>The Beholder's eye flicks over to a new target, using Antimagic Gaze against them instead.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.3.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "DZnMFFMcvqLFOQ4a",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726675933204,
+        "modifiedTime": 1726676771734,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    },
+    {
+      "type": "action",
+      "name": "Contingencies Upon Contingencies",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A new round begins.</p><hr /><p>The Beholder is the master of foresight and paranoia. Make a @Check[flat|showDC:all|dc:6] flat check. On a success, you may come up with something the Beholder could have reasonably done to prepare for the current circumstances. A few examples are listed below:</p><ul><li><p>The Beholder is injured; it levitates over a hidden @UUID[Compendium.pf2e.equipment-srd.G7haQ5gDt30ftJLC]{Healing Potion (Moderate)} and drinks it.</p></li><li><p>The Beholder is restrained or immobilised; its eye rays blast out and hit a hidden trap in its lair, allowing it to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} the creature restraining it.</p></li><li><p>The Beholder is surrounded; it telekinetically activates a powerful magic item in its lair that imposes heavy gravity, causing all creatures other than itself to treat the air as greater difficult terrain for 2 rounds.</p></li></ul><p>Importantly, these Contingencies should not cause damage. Other than that, have fun with it!</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.3.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "z5YXXttGvz9mE7P3",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "R2CqqIPUiZ0hDM3i": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.3.1",
+        "createdTime": 1726676013985,
+        "modifiedTime": 1726676772815,
+        "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+      }
+    }
+  ],
+  "folder": "n0HzM2ZV2gwk8zju",
+  "flags": {
+    "exportSource": {
+      "world": "aelops-tavern",
+      "system": "pf2e",
+      "coreVersion": "12.331",
+      "systemVersion": "6.4.0"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.3.1",
+    "createdTime": 1726673384778,
+    "modifiedTime": 1726690766480,
+    "lastModifiedBy": "R2CqqIPUiZ0hDM3i"
+  }
+}
